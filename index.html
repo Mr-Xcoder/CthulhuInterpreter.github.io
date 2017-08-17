@@ -6,14 +6,44 @@
 h1 {
   font-size: 6;
 }
+textarea{
+ resize: none;
+ border-radius: 5px;
+}
+textarea[name="code"] {
+ width: 60vw;
+ height: 5vw;
+}
+textarea[name="input"] {
+ width: 60vw;
+ height: 3vw;
+ background: #f9f9f9;
+}
+input[type=submit]{
+ background: #ffc100;
+ border: 0.1px solid;
+ border-radius:3px;
+ width:10vw;
+ height:2vw;
+}
 body { font-family: "Helvetica"; }
 </style>
 </head>
 <body>
 
-<center><h1><a href="https://github.com/Mr-Xcoder/Cthulhu" style="text-decoration:none">Cthulhu</a> Interpreter Beta v0.0</h1>
-  
-<p>Welcome to the online Interpreter for <a href="https://github.com/Mr-Xcoder/Cthulhu" style="text-decoration:none">Cthulhu</a>! Here is <a href="https://github.com/Mr-Xcoder/Cthulhu/wiki" style="text-decoration:none;">the full documentation</a>.</p></center>
+<center>
 
+<h1><a href="https://github.com/Mr-Xcoder/Cthulhu" style="text-decoration:none">Cthulhu</a> Interpreter Beta v0.0</h1>  
+<p>Welcome to the online Interpreter for <a href="https://github.com/Mr-Xcoder/Cthulhu" style="text-decoration:none">Cthulhu</a>! Here is <a href="https://github.com/Mr-Xcoder/Cthulhu/wiki" style="text-decoration:none;">the full documentation</a>.</p>
+
+<textarea name="code" placeholder="Code"></textarea>
+
+<textarea name="input" placeholder="Input"></textarea>
+
+<form>
+<input type="submit" value="Run">
+</form>
+
+</center>
 </body>
 </html>
