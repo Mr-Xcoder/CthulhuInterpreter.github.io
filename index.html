@@ -35,12 +35,22 @@
          }
          body { font-family: "American Typewriter"; }
       </style>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+      function countChar(val) {
+        var len = val.value.length;
+        $('#charNum').text(len+" bytes");
+      };
+    </script>
    </head>
    <body>
       <center>
          <h1><a href="https://github.com/Mr-Xcoder/Cthulhu" style="text-decoration:none">Cthulhu</a> Interpreter</h1>
          <p>Welcome to the online Interpreter for <a href="https://github.com/Mr-Xcoder/Cthulhu" style="text-decoration:none">Cthulhu</a>! Here is <a href="https://github.com/Mr-Xcoder/Cthulhu/wiki" style="text-decoration:none;">the full documentation</a>.</p>
-         <textarea name="code" placeholder="Code"></textarea>
+      </center>
+         <p id="charNum" align="right" style="margin-right: 15vw;">0 bytes</p>
+      <center>
+         <textarea name="code" placeholder="Code" onkeyup="countChar(this)"></textarea>
          <textarea name="input" placeholder="Input"></textarea>
          <form>
             <input type="submit" value="Run">
